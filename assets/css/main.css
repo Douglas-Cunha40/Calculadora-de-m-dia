@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_general {
+    display: flex;
+    padding: 3rem 0;
+    gap: 1.5rem;
+}
+
+.content_general .ilustrator img {
+    height: 400px;
+}
+
+.content_general .form {
+    width: 500px;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    background-color: rgb(57, 57, 57);
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.form h1 {
+    color: #fff;
+    font-size: 2rem;
+    position: relative;
+}
+
+.form h1::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-color: #00d20a;
+    width: 200px;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.form form label {
+    color: #fff;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.form form input {
+    width: 94%;
+    padding: 0.6rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-color: #7d7d7d;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.form form input::-webkit-outer-spin-button,
+.form form input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.form form button {
+    width: 94%;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    padding: 0.6rem;
+    background-color: #00d20a;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2px;
+}
+
+.result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 1.5rem 0;
+}
+
+.result h2 {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.approved_disapproved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.approved_disapproved .ap {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.approved_disapproved .ap strong {
+    color: #00d20a
+}
+
+.approved_disapproved .apd {
+    color: #00d20a;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.approved_disapproved span {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.approved_disapproved span strong {
+    color: #d20000
+}
+
+.approved_disapproved i {
+    color: #d20000;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .ilustrator img {
+        display: none;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form form {
+        width: 70%;
+    }
+
+    .form form input {
+        width: 85%;
+    }
+
+    .form form button {
+        width: 85%;
+    }
+
+    .result h2 {
+        font-size: 1.7rem;
+    }
+
+    .approved_disapproved .ap,
+    .rep {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .ilustrator img {
+        display: none;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form form {
+        width: 70%;
+    }
+
+    .form form input {
+        width: 85%;
+    }
+
+    .form form button {
+        width: 85%;
+    }
+
+    .result h2 {
+        font-size: 1.7rem;
+    }
+
+    .approved_disapproved .ap,
+    .rep {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .content_general {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form form input {
+        width: 95%;
+    }
+
+    .form form button {
+        width: 95%;
+    }
+
+    .result h2 {
+        font-size: 1.7rem;
+    }
+
+    .approved_disapproved .ap,
+    .rep {
+        font-size: 1.5rem;
+    }
+}

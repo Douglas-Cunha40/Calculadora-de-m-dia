@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Média Final</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <section class="content_general">
+                <div class="ilustrator">
+                    <img src="./assets/images/ilustrator.svg" alt="Ilustração de sala de aula">
+                </div>
+
+                <div class="form">
+                        <h1>Calculadora de média</h1>
+                    <form id="form">
+                        <label for="nota1">🧑‍🎓 Digite a nota da avaliação 01</label>
+                        <input type="number" name="nota1" id="primeira_nota" required>
+
+                        <label for="nota2"> 🧑‍🎓 Digite a nota da avaliação 02</label>
+                        <input type="number" name="nota1" id="segunda_nota" required>
+
+                        <label for="nota3">🧑‍🎓 Digite a nota da avaliação 03</label>
+                        <input type="number" name="nota3" id="terceira_nota" required>
+
+                        <button type="submit">Calcular</button>
+                    </form>
+
+                    <div class="result hidden" id="result">
+                        <h2 id="text_media"></h2>
+                        <div class="approved_disapproved">
+                            <span class="ap">Você esta: <Strong>Aprovado</Strong></span>
+                            <i class="fa-solid fa-thumbs-up apd"></i>
+                            <span class="rep">Você esta: <Strong>Reprovado</Strong></span>
+                            <i class="fa-solid fa-thumbs-down rpd"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
